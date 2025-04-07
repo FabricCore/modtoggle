@@ -1,0 +1,14 @@
+{
+    "name": "toggle",
+    "version": "0.1.0",
+    "authors": [ "Sirius" ],
+    "description": "Togglable services.",
+    "license": "AGPL-3.0-or-later",
+    "keywords": [ "core", "toggles" ],
+
+    "entry": "entry.js",
+    "dependencies": {},
+
+    "repository": null,
+    "homepage": null
+}
