@@ -7,22 +7,27 @@ Create modules that can be toggled on or off.
 1. Create a toggle.
 
 ```js
-let myToggle {
-  name: "mytoggle", // required
-
-  onTick: () => {
-    console.log("tick!");
-  }
-
-  onActivate: () => { // required
-    modtoggle.registerListener(ClientTickEvents.END_CLIENT_TICK, mytoggle.onTick, "mytoggle-onTick");
-  }
-
-  onDeactivate: () => { // required
-    modtoggle.registerListener(ClientTickEvents.END_CLIENT_TICK, "mytoggle-onTick");
-  }
+let myToggle = {
+    name: "mytoggle", // required
+    onTick: () => {
+        console.log("tick!");
+    },
+    onActivate: () => {
+        // required
+        modtoggle.registerListener(
+            ClientTickEvents.END_CLIENT_TICK,
+            myToggle.onTick,
+            "mytoggle-onTick",
+        );
+    },
+    onDeactivate: () => {
+        // required
+        modtoggle.deregisterListener(
+            ClientTickEvents.END_CLIENT_TICK,
+            "mytoggle-onTick",
+        );
+    },
 };
-
 modtoggle.registerToggle(myToggle);
 ```
 
@@ -33,4 +38,11 @@ modtoggle.isActive("mytoggle"); // true
 
 modtoggle.deactivate("mytoggle");
 modtoggle.toggle("mytoggle");
+```
+
+Or use the commands
+
+```
+/toggle enable mytoggle
+/toggle disable mytoggle
 ```
