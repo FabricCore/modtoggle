@@ -7,7 +7,9 @@
     "keywords": [ "core", "toggles" ],
 
     "entry": "entry.js",
-    "dependencies": {},
+    "dependencies": {
+        "keep": "0.1.0"
+    },
 
     "repository": null,
     "homepage": null
