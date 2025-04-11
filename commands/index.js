@@ -4,7 +4,7 @@ Command.register({
 
     args: {
         name: {
-            type: StringArgumentType.word(),
+            type: StringArgumentType.string(),
             execute: "toggle.js",
         },
     },
@@ -14,7 +14,7 @@ Command.register({
             name: "enable",
             args: {
                 name: {
-                    type: StringArgumentType.word(),
+                    type: StringArgumentType.string(),
                     execute: "enable.js",
                 },
             },
@@ -23,7 +23,7 @@ Command.register({
             name: "disable",
             args: {
                 name: {
-                    type: StringArgumentType.word(),
+                    type: StringArgumentType.string(),
                     execute: "disable.js",
                 },
             },
@@ -32,7 +32,7 @@ Command.register({
             name: "toggle",
             args: {
                 name: {
-                    type: StringArgumentType.word(),
+                    type: StringArgumentType.string(),
                     execute: "toggle.js",
                 },
             },
