@@ -23,7 +23,7 @@ The folder should look like this
     └── toggle/
         ├── lib/
         ├── commands/
- └── package.json
+        └── package.json
 ```
 
 ## Commands
