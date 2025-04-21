@@ -137,4 +137,4 @@ Activate a toggle if it is inactive, deactivates if it is active.
 
 Returns a set of all toggles, active or not.
 
-> The **_key_** of the object is the name of the toggle, the **_value_** is an arbitrary value that does not matter.
+The **_key_** of the object is the name of the toggle, the **_value_** is an arbitrary value that does not matter.
