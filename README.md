@@ -31,8 +31,6 @@ The folder should look like this
 .minecraft/config/jscore/
 └── modules/
     └── toggle/
-        ├── lib/
-        ├── commands/
         └── package.json
 ```
 
