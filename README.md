@@ -10,6 +10,16 @@ Create toggleable modules and listen to events.
 /pully install toggle
 ```
 
+#### Require as Dependency
+
+```json
+{
+  "dependencies": {
+    "toggle": "0.1.0"
+  }
+}
+```
+
 #### Manual Install
 
 1. [Download **toggle**](https://github.com/FabricCore/modtoggle/archive/refs/heads/master.zip).
