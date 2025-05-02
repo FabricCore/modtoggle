@@ -58,6 +58,8 @@ List toggleables.
 
 ## Developer Guide
 
+> Modules that provide a toggle should be prefixed with **toggle-**, such as **toggle-modulename**.
+
 A **ToggleObject** is an object with the following fields.
 
 | Field        | Type              | Description                                    |
