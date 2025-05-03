@@ -90,6 +90,10 @@ let mytoggle = {
 modtoggle.registerToggle(mytoggle);
 ```
 
+Some events allows a value to be returned, such as **ClientSendMessageEvents.ALLOW_CHAT**.
+- If a listener returns a value, the value is returned immediately, skipping all other listeners.
+- If all listeners does not return a value, then a **default value** is returned instead, this is **zero** for numerical values, or **true** for boolean values.
+
 ## Library Functions
 
 #### modtoggle.activeToggles() → { name: isActive }
