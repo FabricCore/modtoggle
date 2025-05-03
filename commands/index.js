@@ -2,6 +2,8 @@ Command.register({
     package: "modules/toggle/commands",
     name: "toggle",
 
+    execute: "listOne.js",
+
     args: {
         name: {
             type: StringArgumentType.string(),
@@ -11,7 +13,6 @@ Command.register({
 
     subcommands: {
         enable: {
-            name: "enable",
             args: {
                 name: {
                     type: StringArgumentType.string(),
@@ -20,7 +21,6 @@ Command.register({
             },
         },
         disable: {
-            name: "disable",
             args: {
                 name: {
                     type: StringArgumentType.string(),
@@ -29,7 +29,6 @@ Command.register({
             },
         },
         toggle: {
-            name: "toggle",
             args: {
                 name: {
                     type: StringArgumentType.string(),
@@ -38,7 +37,6 @@ Command.register({
             },
         },
         list: {
-            name: "list",
             execute: "listOne.js",
             args: {
                 page: {
@@ -46,6 +44,19 @@ Command.register({
                     execute: "list.js",
                 },
             },
+
+            subcommands: {
+                hidden: {
+                    execute: "listHiddenOne.js",
+                    args: {
+                        page: {
+                            type: IntegerArgumentType.integer(1),
+                            execute: "listHidden.js",
+                        },
+                    },
+                },
+            },
+
         },
     },
 });
