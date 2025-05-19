@@ -148,7 +148,7 @@ modtoggle.setPass(ClientSendMessageEvents.MODIFY_CHAT, (res, args) => {
 });
 ```
 
-yarntogglepass TODO provides a good number of pass behaviour for Fabric API listeners.
+[yarntogglepass](https://github.com/FabricCore/yarntogglepass) provides a good number of pass behaviour for Fabric API listeners.
 
 ## Library Functions
 
